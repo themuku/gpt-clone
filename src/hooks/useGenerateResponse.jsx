@@ -6,7 +6,5 @@ export async function useGenerateResponse(req) {
 
   const result = await model.generateContent(req);
 
-  console.log(result.response.text());
-
   return result.response.text();
 }

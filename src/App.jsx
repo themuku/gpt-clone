@@ -15,7 +15,6 @@ export default function App() {
 
     if (req.trim().length < 0) return;
     const response = await useGenerateResponse(req);
-    console.log(response);
 
     setRes(response);
   };
